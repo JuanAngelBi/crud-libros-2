@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { db } from "../services/firebase";
-import { dataBaseContext } from "./Context";
+import { dataBaseContext } from "./context";
 import { collection, doc, getDocs, setDoc, updateDoc, deleteDoc } from "firebase/firestore";
 
 export default function FirestoreContext(props) {
