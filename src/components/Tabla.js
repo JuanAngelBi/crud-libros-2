@@ -3,10 +3,10 @@ import context from "../context/context";
 import Fila from "./ElementoTabla";
 
 export default function Tabla() {
-    const { getLibros, lstLibros } = useContext(context);
+    const { getBooks, lstLibros } = useContext(context);
 
     useEffect(() => {
-        getLibros()
+        getBooks()
         console.log("cargar");
     }, []);
 
