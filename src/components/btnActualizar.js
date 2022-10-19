@@ -3,7 +3,7 @@ import context from "../context/context";
 
 export default function ButtonActualizar() {
 
-    const {updateBook, getBooks} = useContext(context)
+    const { updateBook, getBooks } = useContext(context)
 
     const [book, setBook] = useState({
         id: "",
@@ -26,8 +26,7 @@ export default function ButtonActualizar() {
 
     return (
         <>
-            <button type="button" className="btn btn-primary">Actualizar</button>
-
+            <button type="button" className="btn btn-warning">Actualizar</button>
             <div className="modal fade" id="exampleModalActualizar" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
@@ -41,10 +40,8 @@ export default function ButtonActualizar() {
                                     <form onSubmit={handleActualizar}>
                                         <input className="form-control my-1" name="id" onChange={handleChange} placeholder="id"></input>
                                         <input className="form-control my-1" name="nombre" onChange={handleChange} placeholder="nombre"></input>
-                                        <input className="form-control my-1" name="apellido" onChange={handleChange} placeholder="apellido"></input>
-                                        <input className="form-control my-1" name="direccion" onChange={handleChange} placeholder="direccion" ></input>
-                                        <input className="form-control my-1" name="numero" onChange={handleChange} placeholder="numero"></input>
-                                        <input className="form-control my-1" type="email" name="email" onChange={handleChange} placeholder="email"></input>
+                                        <input className="form-control my-1" name="autor" onChange={handleChange} placeholder="autor"></input>
+                                        <input className="form-control my-1" name="editorial" onChange={handleChange} placeholder="editorial"></input>
                                         <button className="w-100 btn btn-lg btn-primary" type="submit" >Actualizar libro</button>
                                     </form>
                                 </div>

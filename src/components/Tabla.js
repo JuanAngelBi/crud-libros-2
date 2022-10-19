@@ -15,10 +15,10 @@ export default function Tabla() {
             <table className="w-100 table table-striped-columns">
                 <thead className="text-center">
                     <tr>
-                        <th className="text-center">id</th>
-                        <th className="text-center">nombre</th>
-                        <th className="text-center">autor</th>
-                        <th className="text-center">editorial</th>
+                        <th className="text-center">ID</th>
+                        <th className="text-center">Nombre</th>
+                        <th className="text-center">Autor</th>
+                        <th className="text-center">Editorial</th>
                     </tr>
                 </thead>
                 <tbody className="text-center">

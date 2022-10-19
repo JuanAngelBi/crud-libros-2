@@ -22,8 +22,7 @@ export default function ButtonEliminar() {
 
     return (
         <>
-            <button type="button" className="btn btn-primary">Eliminar</button>
-
+            <button type="button" className="btn btn-danger">Eliminar</button>
             <div className="modal fade" id="exampleModalEliminar" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
@@ -36,7 +35,7 @@ export default function ButtonEliminar() {
                                 <div className="form-signin w-25 m-auto">
                                     <form onSubmit={handleDelete}>
                                         <input className="form-control my-1" name="id" onChange={handleChange} placeholder="ID"></input>
-                                        <button className="w-100 btn btn-lg btn-primary" type="submit" >Eliminar libro</button>
+                                        <button className="w-100 btn btn-lg btn-primary" type="submit">Eliminar libro</button>
                                     </form>
                                 </div>
                             </div>
