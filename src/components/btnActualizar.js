@@ -2,7 +2,8 @@ import { useState, useContext } from "react";
 import context from "../context/context";
 
 export default function ButtonActualizar() {
-    const [updateBook, getBooks] = useContext(context)
+
+    const {updateBook, getBooks} = useContext(context)
 
     const [book, setBook] = useState({
         id: "",
